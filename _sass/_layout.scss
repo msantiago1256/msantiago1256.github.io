@@ -188,8 +188,14 @@
   color:#ecf0f1;
   box-shadow:1px 5px 15px 0px rgba(100,100,100,.5);
   overflow:auto;
-  transform:translatey(-200%);
+   -webkit-transform: translate3d(0, 0, 0) translatey(-200%);
+    -moz-transform: translate3d(0, 0, 0) translatey(-200%);
+    -ms-transform: translate3d(0, 0, 0) translatey(-200%);
+    -o-transform: translate3d(0, 0, 0) translatey(-200%);
+    transform: translate3d(0, 0, 0) translatey(-200%);
+  
   transition:transform 300ms ease;
+  
 }
 
 #radio-choice-1:checked+label{
