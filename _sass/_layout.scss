@@ -177,26 +177,6 @@
 
 
 
-.resume_close {
-  width:300px;
-  margin:auto;
-  position:fixed;
-  padding:20px 0;
-  left:50%;
-  margin-left:-160px;
-  background:#16a085;
-  color:#ecf0f1;
-  box-shadow:1px 5px 15px 0px rgba(100,100,100,.5);
-  overflow:auto;
-   -webkit-transform: translate3d(0, 0, 0) translatey(-200%);
-    -moz-transform: translate3d(0, 0, 0) translatey(-200%);
-    -ms-transform: translate3d(0, 0, 0) translatey(-200%);
-    -o-transform: translate3d(0, 0, 0) translatey(-200%);
-    transform: translate3d(0, 0, 0) translatey(-200%);
-  
-  transition:transform 300ms ease;
-  
-}
 
 #radio-choice-1:checked+label{
    transform:translatey(0%);

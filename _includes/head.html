@@ -8,4 +8,28 @@
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <style type="text/css">
+
+.resume_close {
+     position:fixed;
+      -webkit-transform: translate3d(0, 0, 0) translatey(-200%);
+    -moz-transform: translate3d(0, 0, 0) translatey(-200%);
+    -ms-transform: translate3d(0, 0, 0) translatey(-200%);
+    -o-transform: translate3d(0, 0, 0) translatey(-200%);
+    transform: translate3d(0, 0, 0) translatey(-200%);
+  width:300px;
+  margin:auto;
+  padding:20px 0;
+  left:50%;
+  margin-left:-160px;
+  background:#16a085;
+  color:#ecf0f1;
+  box-shadow:1px 5px 15px 0px rgba(100,100,100,.5);
+  overflow:auto;
+  
+  transition:transform 300ms ease;
+  
+}
+</style>
+
 </head>
