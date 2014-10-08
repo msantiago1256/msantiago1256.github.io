@@ -151,10 +151,15 @@ pre {
   min-height: 300px;
   background-image: url(../images/concert.jpeg);
   background-size: cover;
-  background-position: center center;
+  background-position-x: 10%;
   background-repeat: no-repeat;
   box-shadow: inset 0px -3px 9px -2px rgba(26, 26, 26, 0.69);
-  position: relative; }
+  position: relative;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 15px; }
 
 .site-title {
   position: absolute;
@@ -167,7 +172,7 @@ pre {
   height: 100px;
   text-align: center;
   margin-left: -225px;
-  margin-top: -50px; }
+  margin-top: -60px; }
   .site-title, .site-title:visited {
     color: white; }
   .site-title:hover {
@@ -278,33 +283,36 @@ pre {
   color: #ecf0f1;
   box-shadow: 1px 5px 15px 0px rgba(100, 100, 100, 0.5);
   overflow: auto;
-  transform: translatey(-200%);
-  transition: transform 300ms ease; }
+  transform: translatey(-300%);
+  transition: transform 300ms ease;
+  visibility: hidden; }
 
 #radio-choice-1:checked + label {
-  transform: translatey(0%); }
+  transform: translatey(0%);
+  visibility: visible; }
 
 .about {
   margin-top: 30px;
   position: absolute;
-  right: 100px; }
+  right: -100px; }
 
 .about_button {
   background: cadetblue;
-  text-align: left;
-  margin-right: -40px;
+  text-align: center;
   border-radius: 50%;
   text-align: center;
-  width: 70px;
+  width: 80px;
   height: 40px;
   display: inline-block;
   padding-top: 12px;
-  padding-bottom: 18px;
+  padding-bottom: 28px;
   color: white;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
-  font-weight: 800;
-  box-shadow: inset 1px 1px 3px 1px rgba(255, 255, 255, 0.27); }
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 500;
+  box-shadow: inset 1px 1px 3px 1px rgba(255, 255, 255, 0.27);
+  cursor: pointer; }
 
 .about_input {
   font-size: 60px;
