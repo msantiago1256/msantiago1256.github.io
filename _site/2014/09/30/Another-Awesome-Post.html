@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Antother awesome post!</title>
+    <title>Antother test post!</title>
     <meta name="description" content="<em>Cheering the Web</em> is my little piece of the net. As an (overly?) enthusiastic developer, i'll post my thoughts, presentations and ideas here as well as link to any projects I might jump on.Thanks for visiting!
 ">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="http://msantiago1256.github.io/2014/09/30/Another-Awesome-Post.html">
+
+    <style media="screen">
+      .holder{
+        transform:translatey(-200%);
+      }
+
+      .resume_close {
+        transform:translatey(-300%);
+        transition:transform 300ms ease;
+      }
+
+      .details_close{
+      transform: scale(0);
+      }
+    </style>
+
 </head>
 
 
@@ -23,22 +39,22 @@
 
     <a class="site-title" href="/">Cheering the Web</a>
 
-
+  </div>
         <div class="about">
 
 
           <label for="radio-choice-1" class="about_button">About Me</label>
           <input type="radio" name="radio-choice" id="radio-choice-1" class="about_input" value="choice-1" />
 
-          <label for="radio-choice-2" class="resume_close">close
+          <label for="radio-choice-2" class="holder">
           <input type="radio" name="radio-choice" id="radio-choice-2"  value="choice-2" />
 
-          <div class="resume">
+          <div class="resume Intro">
             <div class="header-sec">
             <h1>Mark Santiago</h1>
               <span class="meimage"></span>
-            <p><em>Web Developer</em> ● <em>Pivot.Com</em></p>
-            <h3><em>Highlights</em></h3>
+            <p><em>Web Developer</em> ● <em>Technologist</em></p>
+            <!-- <h3><em>Highlights</em></h3> -->
             <hr />
                <h3 style="text-align:center;padding:20px;"><em>I'm a passionate front end developer with a unique combination of skills derived from an equally unique set of work experiences. The end user experience is my primary focus and delight is my ultimate goal.</em></h3>
           </div> <!--end header section-->
@@ -47,7 +63,11 @@
 
 
           </div>
-          <div class="experience">
+          <div class="resume Skills">
+            <h1><em>Skills</em></h1> 
+
+          </div>
+          <div class="resume Experience">
             <h3>Experience</h3>
             <ul>
               <li>Web Development</li>
@@ -58,9 +78,59 @@
 
           </div>
 
+
+
+
+
+
+
         </label>
 
 </div>
+
+
+
+
+  <div class="page_deets">
+
+
+    <label for="radio-choice-3" class="about_button site">About This Site</label>
+    <input type="radio" name="radio-choice" id="radio-choice-3" class="page_details_button" value="choice-3" />
+
+    <label for="radio-choice-4" class="details_close"><span>close</span>
+        <input type="radio" name="radio-choice" id="radio-choice-4"  value="choice-4" />
+
+        <div>
+            <h3>Loving the Web and Those Who Build It.</h3>
+            <p>
+                Chew iPad power cord. Cat snacks use lap as chair, and always hungry but inspect anything brought into the house intently stare at the same spot scamper. Favor packaging over toy swat at dog, so intrigued by the shower always hungry, sleep on keyboard, so roll on the floor purring your whiskers off. Sit in box pooping rainbow while flying in a toasted bread costume in space loves cheeseburgers, chase imaginary bugs flop over. Always hungry scamper.
+            </p>
+
+            <p>
+              A few details about this site:
+            </p>
+            <ul>
+              <li>It's an excuse to learn how to use Jekyll</li>
+              <li>It's also a playground for some CSS performance test</li>
+              <li>...on that note, this site is JS free, not because i'm a comptlete hack in JS but because I like seeing how much I can do without it.</li>
+              <li>Actually, that last bit was inspired by <a href="http://www.aerotwist.com">This guy</a>.</li>
+              <li>Sometimes posts won't be more than shared link and my thoughts on the site/service.</li>
+            </ul>
+
+            <ul class="cat_colors">
+              <li>Post/Essay</li>
+              <li>Links I Love</li>
+              <li>Photography</li>
+            </ul>
+
+
+        </div>
+
+
+    </label>
+
+
+
 
 
   </div>
@@ -94,16 +164,12 @@
              <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Antother awesome post!</h1>
+    <h1 class="post-title">Antother test post!</h1>
     <p class="post-meta">Sep 30, 2014 • Mark Santiago</p>
   </header>
 
   <article class="post-content">
-    <h1 id="i-love-this-thing">I love this thing.</h1>
-
-<h2 id="i-love-this-thing-1">I love this thing.</h2>
-
-<p>The truth is i’m still learning but why isn’t it a good thing to screw things up and know that everything is going to be ok in the end? Kill it motha, kill it. it’s just so freaking cool that all i want to do is type and type and type. i wish i had on e fo tese in the office. i should get one of these keyboards…. i used to make way fewer mistakes i’m not typing as much anymore. </p>
+    <p>The truth is i’m still learning but why isn’t it a good thing to screw things up and know that everything is going to be ok in the end? Kill it motha, kill it. it’s just so freaking cool that all i want to do is type and type and type. i wish i had on e fo tese in the office. i should get one of these keyboards…. i used to make way fewer mistakes i’m not typing as much anymore.</p>
 
 <p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 

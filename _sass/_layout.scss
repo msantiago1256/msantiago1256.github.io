@@ -3,8 +3,9 @@
  */
 
 @import url(http://fonts.googleapis.com/css?family=Arvo);
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
-.site-header {
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Amatic+SC);
+
+.site-header .wrapper{
     min-height: 300px;
     background-image: url(../images/concert.jpeg);
     background-size: cover;
@@ -17,7 +18,8 @@
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding:0px;
 }
 
 .site-title {
@@ -179,53 +181,53 @@
 
 
 
-
-
-
-.resume_close {
-  width:300px;
-  margin:auto;
-  position:fixed;
-  padding:20px 0;
-  left:50%;
-  margin-left:-160px;
-  background:#16a085;
-  color:#ecf0f1;
-  box-shadow:1px 5px 15px 0px rgba(100,100,100,.5);
-  overflow:auto;
-  transform:translatey(-300%);
-  transition:transform 300ms ease;
-  visibility:hidden;
+.resume_close{
+  width: 300px;
+  position: absolute;
+  padding: 20px 0;
+  margin-left: -340px;
+  background: #16a085;
+  color: #ecf0f1;
+  box-shadow: 1px 5px 15px 0px rgba(100,100,100,.5);
+  overflow: auto;
+  transform: translatey(-300%);
+  transition: transform 300ms ease;
 }
+
+
+
 
 #radio-choice-1:checked+label{
    transform:translatey(0%);
-   visibility:visible;
+
 
 }
-.about{
-  margin-top: 30px;
-position: absolute;
-right: -100px;
+  .about{
+  position: absolute;
+  top: 50px;
+  width: 100%;
 }
 
-.about_button{
-background: cadetblue;
-text-align: center;
-border-radius: 50%;
-text-align: center;
-width: 80px;
-height: 40px;
-display: inline-block;
-padding-top: 12px;
-padding-bottom: 28px;
-color: white;
-font-family: 'Amatic SC', cursive;
-font-size: 35px;
-line-height: 30px;
-font-weight: 500;
-box-shadow: inset 1px 1px 3px 1px rgba(255, 255, 255, 0.27);
-cursor: pointer;
+  .about_button{
+    position:absolute;
+  background: #9b59b6;
+  text-align: center;
+  border-radius: 50%;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 28px;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 500;
+  box-shadow: inset 1px 1px 3px 1px rgba(255, 255, 255, 0.27);
+  cursor: pointer;
+  left:50%;
+  margin-left:200px;
 }
 
 
@@ -239,6 +241,8 @@ line-height: 49px;
 width: 30px;
 height: 30px;
 margin-left: -15px;
+position:fixed;
+top:-9999px;
 
 }
 
@@ -261,6 +265,214 @@ margin-left: -15px;
 }
 
 
+$green:#16a085;
+
+.holder{
+  width: 960px;
+  margin: 0 auto;
+  z-index: 10;
+  left: 50%;
+  margin-left: -455px;
+  position:absolute;
+  transition: transform 100ms ease;
+}
+
+
+.resume{
+  position:relative;
+  height:500px;
+  width:300px;
+  box-shadow:1px 1px 5px 1px #666;
+  display:inline-block;
+  margin-right:0px;
+  float:left;
+  padding:10px;
+  color:white;
+
+}
+
+.Intro{
+  background-color:darken($green,10%);
+  z-index:5;
+
+
+}
+
+.Skills{
+  background-color:$green;
+  z-index:2;
+  transition:transform 200ms ease;
+  transition-delay:450ms;
+  transform:translatex(-100%);
+
+    h1{
+    text-align:center;
+    position:relative;
+    padding:10px;
+
+      &:before{
+        content:"\29C9";
+        position:absolute;
+        bottom:-15px;
+        transform:rotate(-90deg);
+        left:49%;
+        color:#2980b9;
+      }
+
+  }
+
+
+}
+
+
+.Experience{
+  background-color:lighten($green,10%);
+  z-index:1;
+      transition:transform 200ms ease;
+  transition-delay:650ms;
+  transform:translatex(-200%);
+}
+
+input:checked+.holder{
+  transform:translatey(0);
+}
+
+
+input:checked+.holder > .resume.Intro,
+input:checked+.holder > .resume.Skills,
+input:checked+.holder > .resume.Experience{
+  transform:translatex(0);
+}
+
+
+
+#radio-choice-2{
+  position:absolute;
+}
+
+// About Page Popup
+
+.page_deets{
+  position: absolute;
+  width:100%;
+  top: 275px;
+
+
+
+  .site{
+  font-size: 24px;
+  background: #27ae60;
+  line-height: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: inset 2px 1px 3px 2px rgba(199, 199, 199, 0.58);
+  position: absolute;
+  left: 50%;
+  margin-left: -265px;
+  top: 50px;
+
+  }
+
+
+
+}
+
+.details_close{
+
+  text-align: right;
+  width: 80%;
+  background: white;
+  box-shadow: -1px 3px 8px 0px rgba(105, 105, 105, 0.78);
+  padding: 10px;
+  position: absolute;
+  top: -250px;
+  transition: transform 500ms linear;
+  margin-left: 10%;
+
+
+  span{
+    background: #9b59b6;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+input{
+  height: 20px;
+width: 30px;
+position: absolute;
+margin-left: -30px;
+visibility: hidden;
+}
+
+div{
+  text-align:left;
+}
+
+  h3{
+  font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+font-size: 32px;
+color:#8e44ad;
+border-bottom: 5px solid;
+border-color:darken(#9b59b6,10%);
+  }
+
+
+
+
+}
+
+.cat_colors{
+
+  text-align:center;
+
+  li{
+  list-style: none;
+  width: 150px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-underline-position: text-bottom;
+  padding: 55px 10px;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  box-shadow: inset 0px 0px 5px 5px rgba(66, 66, 66, 0.25);
+
+    &:first-child{
+      background-color:#e74c3c;
+    }
+
+    &:nth-child(2){
+      background-color:#2ecc71;
+    }
+
+    &:last-child{
+      background-color:#9b59b6;
+    }
+
+
+
+  }
+}
+
+
+.page_details_button{
+  position: absolute;
+  margin-top: -64px;
+  left: 21px;
+  height: 40px;
+  width: 40px;
+  visibility: hidden;
+}
+
+.page_details_button:checked+label{
+   transform:scale(1);
+
+}
 
 
 

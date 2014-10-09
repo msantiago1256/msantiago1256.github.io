@@ -1,15 +1,11 @@
 ---
 layout: post
-title:  "Antother awesome post!"
+title:  "Antother test post!"
 author: "Mark Santiago"
 ---
-#I love this thing.
-
-##I love this thing.
 
 
-
-The truth is i'm still learning but why isn't it a good thing to screw things up and know that everything is going to be ok in the end? Kill it motha, kill it. it's just so freaking cool that all i want to do is type and type and type. i wish i had on e fo tese in the office. i should get one of these keyboards.... i used to make way fewer mistakes i'm not typing as much anymore. 
+The truth is i'm still learning but why isn't it a good thing to screw things up and know that everything is going to be ok in the end? Kill it motha, kill it. it's just so freaking cool that all i want to do is type and type and type. i wish i had on e fo tese in the office. i should get one of these keyboards.... i used to make way fewer mistakes i'm not typing as much anymore.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

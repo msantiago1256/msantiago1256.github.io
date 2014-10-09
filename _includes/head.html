@@ -8,4 +8,20 @@
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <style media="screen">
+      .holder{
+        transform:translatey(-200%);
+      }
+
+      .resume_close {
+        transform:translatey(-300%);
+        transition:transform 300ms ease;
+      }
+
+      .details_close{
+      transform: scale(0);
+      }
+    </style>
+
 </head>
