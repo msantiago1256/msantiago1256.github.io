@@ -10,3 +10,4 @@ github_username:  msantiago1256
 
 # Build settings
 markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json"]
