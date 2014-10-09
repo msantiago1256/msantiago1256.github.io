@@ -1,11 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Amatic+SC);
 /**
  * Reset some basic elements
  */
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Amatic+SC);
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
@@ -17,16 +15,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #222222;
+  color: #222;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
@@ -52,8 +47,7 @@ figcaption {
 ul, ol {
   margin-left: 30px; }
 
-li > ul,
-li > ol {
+li > ul, li > ol {
   margin-bottom: 0; }
 
 /**
@@ -69,9 +63,9 @@ a {
   color: #2a7ae2;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #1758a9; }
   a:hover {
-    color: #222222;
+    color: #222;
     text-decoration: underline; }
 
 /**
@@ -90,8 +84,7 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
+pre, code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
@@ -112,7 +105,6 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
@@ -120,7 +112,6 @@ pre {
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
@@ -185,7 +176,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #222222;
+    color: #222;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -232,8 +223,7 @@ pre {
   font-size: 18px;
   margin-bottom: 15px; }
 
-.contact-list,
-.social-media-list {
+.contact-list, .social-media-list {
   list-style: none;
   margin-left: 0; }
 
@@ -248,31 +238,25 @@ pre {
   padding-left: 15px; }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
   width: calc(35% - (30px / 2)); }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
   width: calc(20% - (30px / 2)); }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
 @media screen and (max-width: 800px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
+  .footer-col-1, .footer-col-2 {
     width: calc(50% - (30px / 2)); }
-
   .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+
 @media screen and (max-width: 600px) {
   .footer-col {
     float: none;
-    width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+
 .resume_close {
   width: 300px;
   position: absolute;
@@ -282,11 +266,16 @@ pre {
   color: #ecf0f1;
   box-shadow: 1px 5px 15px 0px rgba(100, 100, 100, 0.5);
   overflow: auto;
-  transform: translatey(-300%);
-  transition: transform 300ms ease; }
+  -webkit-transform: translatey(-300%);
+      -ms-transform: translatey(-300%);
+          transform: translatey(-300%);
+  -webkit-transition: -webkit-transform 300ms ease;
+          transition: transform 300ms ease; }
 
 #radio-choice-1:checked + label {
-  transform: translatey(0%); }
+  -webkit-transform: translatey(0%);
+      -ms-transform: translatey(0%);
+          transform: translatey(0%); }
 
 .about {
   position: absolute;
@@ -347,7 +336,8 @@ pre {
   left: 50%;
   margin-left: -455px;
   position: absolute;
-  transition: transform 100ms ease; }
+  -webkit-transition: -webkit-transform 100ms ease;
+          transition: transform 100ms ease; }
 
 .resume {
   position: relative;
@@ -361,15 +351,19 @@ pre {
   color: white; }
 
 .Intro {
-  background-color: #107360;
+  background-color: #10735f;
   z-index: 5; }
 
 .Skills {
   background-color: #16a085;
   z-index: 2;
-  transition: transform 200ms ease;
-  transition-delay: 450ms;
-  transform: translatex(-100%); }
+  -webkit-transition: -webkit-transform 200ms ease;
+          transition: transform 200ms ease;
+  -webkit-transition-delay: 450ms;
+          transition-delay: 450ms;
+  -webkit-transform: translatex(-100%);
+      -ms-transform: translatex(-100%);
+          transform: translatex(-100%); }
   .Skills h1 {
     text-align: center;
     position: relative;
@@ -378,24 +372,32 @@ pre {
       content: "\29C9";
       position: absolute;
       bottom: -15px;
-      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
       left: 49%;
       color: #2980b9; }
 
 .Experience {
   background-color: #1ccdaa;
   z-index: 1;
-  transition: transform 200ms ease;
-  transition-delay: 650ms;
-  transform: translatex(-200%); }
+  -webkit-transition: -webkit-transform 200ms ease;
+          transition: transform 200ms ease;
+  -webkit-transition-delay: 650ms;
+          transition-delay: 650ms;
+  -webkit-transform: translatex(-200%);
+      -ms-transform: translatex(-200%);
+          transform: translatex(-200%); }
 
 input:checked + .holder {
-  transform: translatey(0); }
+  -webkit-transform: translatey(0);
+      -ms-transform: translatey(0);
+          transform: translatey(0); }
 
-input:checked + .holder > .resume.Intro,
-input:checked + .holder > .resume.Skills,
-input:checked + .holder > .resume.Experience {
-  transform: translatex(0); }
+input:checked + .holder > .resume.Intro, input:checked + .holder > .resume.Skills, input:checked + .holder > .resume.Experience {
+  -webkit-transform: translatex(0);
+      -ms-transform: translatex(0);
+          transform: translatex(0); }
 
 #radio-choice-2 {
   position: absolute; }
@@ -424,7 +426,8 @@ input:checked + .holder > .resume.Experience {
   padding: 10px;
   position: absolute;
   top: -250px;
-  transition: transform 500ms linear;
+  -webkit-transition: -webkit-transform 500ms linear;
+          transition: transform 500ms linear;
   margin-left: 10%; }
   .details_close span {
     background: #9b59b6;
@@ -446,7 +449,7 @@ input:checked + .holder > .resume.Experience {
     font-size: 32px;
     color: #8e44ad;
     border-bottom: 5px solid;
-    border-color: #804399; }
+    border-color: #7f4399; }
 
 .cat_colors {
   text-align: center; }
@@ -479,7 +482,9 @@ input:checked + .holder > .resume.Experience {
   visibility: hidden; }
 
 .page_details_button:checked + label {
-  transform: scale(1); }
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
 
 /**
  * Page content
@@ -566,32 +571,32 @@ input:checked + .holder > .resume.Experience {
     font-style: italic; }
   .highlight .gd {
     color: #000;
-    background-color: #ffdddd; }
+    background-color: #fdd; }
   .highlight .gd .x {
     color: #000;
-    background-color: #ffaaaa; }
+    background-color: #faa; }
   .highlight .ge {
     font-style: italic; }
   .highlight .gr {
-    color: #aa0000; }
+    color: #a00; }
   .highlight .gh {
-    color: #999999; }
+    color: #999; }
   .highlight .gi {
     color: #000;
-    background-color: #ddffdd; }
+    background-color: #dfd; }
   .highlight .gi .x {
     color: #000;
-    background-color: #aaffaa; }
+    background-color: #afa; }
   .highlight .go {
-    color: #888888; }
+    color: #888; }
   .highlight .gp {
-    color: #555555; }
+    color: #555; }
   .highlight .gs {
     font-weight: bold; }
   .highlight .gu {
-    color: #aaaaaa; }
+    color: #aaa; }
   .highlight .gt {
-    color: #aa0000; }
+    color: #a00; }
   .highlight .kc {
     font-weight: bold; }
   .highlight .kd {
@@ -604,20 +609,20 @@ input:checked + .holder > .resume.Experience {
     color: #458;
     font-weight: bold; }
   .highlight .m {
-    color: #009999; }
+    color: #099; }
   .highlight .s {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .na {
-    color: teal; }
+    color: #008080; }
   .highlight .nb {
-    color: #0086b3; }
+    color: #0086B3; }
   .highlight .nc {
     color: #458;
     font-weight: bold; }
   .highlight .no {
-    color: teal; }
+    color: #008080; }
   .highlight .ni {
-    color: purple; }
+    color: #800080; }
   .highlight .ne {
     color: #900;
     font-weight: bold; }
@@ -625,52 +630,52 @@ input:checked + .holder > .resume.Experience {
     color: #900;
     font-weight: bold; }
   .highlight .nn {
-    color: #555555; }
+    color: #555; }
   .highlight .nt {
-    color: navy; }
+    color: #000080; }
   .highlight .nv {
-    color: teal; }
+    color: #008080; }
   .highlight .ow {
     font-weight: bold; }
   .highlight .w {
-    color: #bbbbbb; }
+    color: #bbb; }
   .highlight .mf {
-    color: #009999; }
+    color: #099; }
   .highlight .mh {
-    color: #009999; }
+    color: #099; }
   .highlight .mi {
-    color: #009999; }
+    color: #099; }
   .highlight .mo {
-    color: #009999; }
+    color: #099; }
   .highlight .sb {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .sc {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .sd {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .s2 {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .se {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .sh {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .si {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .sx {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .sr {
     color: #009926; }
   .highlight .s1 {
-    color: #dd1144; }
+    color: #d14; }
   .highlight .ss {
     color: #990073; }
   .highlight .bp {
-    color: #999999; }
+    color: #999; }
   .highlight .vc {
-    color: teal; }
+    color: #008080; }
   .highlight .vg {
-    color: teal; }
+    color: #008080; }
   .highlight .vi {
-    color: teal; }
+    color: #008080; }
   .highlight .il {
-    color: #009999; }
+    color: #099; }
