@@ -514,8 +514,26 @@ input:checked + .holder > .resume.Intro, input:checked + .holder > .resume.Skill
   padding: 30px 0;
   padding-top: 90px;
   margin-top: -90px;
-  background: #34495e;
-  color: white; }
+  background: white;
+  color: #444; }
+
+svg + p {
+  position: absolute;
+  top: 0;
+  color: #333;
+  width: 301px;
+  margin-left: 190px;
+  background: white;
+  margin-top: 50px; }
+
+#This-is-the-Headline {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 400px;
+  margin-left: 150px;
+  font-weight: 800;
+  font-size: 30px; }
 
 .page-heading {
   font-weight: 500;
@@ -538,7 +556,8 @@ input:checked + .holder > .resume.Intro, input:checked + .holder > .resume.Skill
     margin-bottom: 30px;
     border-bottom: 1px solid;
     border-color: #46627f;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    position: relative; }
 
 .post-meta {
   font-size: 14px;
