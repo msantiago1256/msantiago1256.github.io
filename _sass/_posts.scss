@@ -1,0 +1,36 @@
+.left_holding{
+  position:absolute;
+}
+
+
+.logo.pos_page{
+  position: relative;
+  height: 110px;
+  width: 200px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: #c0392b;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+
+  a.site-title{
+  position: absolute;
+  font-size: 48px;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-weight: 800;
+  line-height: 52px;
+  left: 0;
+  top: 50%;
+  margin-top: -45px;
+  }
+}
+
+.post_section{
+  width: 65%;
+margin-left: 30%;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="individual_post">
 
   <head>
     <meta charset="utf-8">
@@ -15,15 +15,19 @@
 
     <style media="screen">
       .holder{
-        transform:translatey(-200%);
+        -webkit-transform:translatey(-200%);
+        -webkit-transform:translatey(-200%);
       }
 
       .resume_close {
+        -webkit-transform:translatey(-300%);
         transform:translatey(-300%);
+        -webkit-transition:transform 300ms ease;
         transition:transform 300ms ease;
       }
 
       .details_close{
+      -webkit-transform: scale(0);
       transform: scale(0);
       }
     </style>
@@ -31,169 +35,24 @@
 </head>
 
 
-  <body>
+  <body >
 
-    <header class="site-header">
+<!-- <div class="left_side"> -->
+<header class="left_holding post_page">
 
-  <div class="wrapper">
+  <div class="logo post_page">
 
     <a class="site-title" href="/">Cheering the Web</a>
 
   </div>
-        <div class="about">
 
-
-          <label for="radio-choice-1" class="about_button">About Me</label>
-          <input type="radio" name="radio-choice" id="radio-choice-1" class="about_input" value="choice-1" />
-
-          <label for="radio-choice-2" class="holder">
-          <input type="radio" name="radio-choice" id="radio-choice-2"  value="choice-2" />
-
-          <div class="resume Intro">
-            <div class="header-sec">
-            <h1>Mark Santiago</h1>
-              <span class="meimage"></span>
-            <p><em>Web Developer</em> ● <em>Technologist</em></p>
-            <!-- <h3><em>Highlights</em></h3> -->
-            <hr />
-               <h3 style="text-align:center;padding:20px;"><em>I'm a passionate front end developer with a unique combination of skills derived from an equally unique set of work experiences. The end user experience is my primary focus and delight is my ultimate goal.</em></h3>
-          </div> <!--end header section-->
-
-
-
-
-          </div>
-          <div class="resume Skills">
-            <h1><em>Skills</em></h1>
-
-          </div>
-          <div class="resume Experience">
-            <h3>Experience</h3>
-            <ul>
-              <li>Web Development</li>
-              <li></li>
-              <li>Founder of Modern Web Develoment Techniques</li>
-              <li></li>
-            </ul>
-
-          </div>
-
-
-
-
-
-
-
-        </label>
-
-</div>
-
-
-
-
-  <div class="page_deets">
-
-
-    <label for="radio-choice-3" class="about_button site">About This Site</label>
-    <input type="radio" name="radio-choice" id="radio-choice-3" class="page_details_button" value="choice-3" />
-
-    <label for="radio-choice-4" class="details_close"><span>close</span>
-        <input type="radio" name="radio-choice" id="radio-choice-4"  value="choice-4" />
-
-        <div>
-            <h3>Loving the Web and Those Who Build It.</h3>
-            <p>
-                Chew iPad power cord. Cat snacks use lap as chair, and always hungry but inspect anything brought into the house intently stare at the same spot scamper. Favor packaging over toy swat at dog, so intrigued by the shower always hungry, sleep on keyboard, so roll on the floor purring your whiskers off. Sit in box pooping rainbow while flying in a toasted bread costume in space loves cheeseburgers, chase imaginary bugs flop over. Always hungry scamper.
-            </p>
-
-            <p>
-              A few details about this site:
-            </p>
-            <ul>
-              <li>It's an excuse to learn how to use Jekyll</li>
-              <li>It's also a playground for some CSS performance test</li>
-              <li>...on that note, this site is JS free, not because i'm a comptlete hack in JS but because I like seeing how much I can do without it.</li>
-              <li>Actually, that last bit was inspired by <a href="http://www.aerotwist.com">This guy</a>.</li>
-              <li>Sometimes posts won't be more than shared link and my thoughts on the site/service.</li>
-            </ul>
-
-            <ul class="cat_colors">
-              <li>Post/Essay</li>
-              <li>Links I Love</li>
-              <li>Photography</li>
-            </ul>
-
-
-        </div>
-
-
-    </label>
-
-
-
-
-
-  </div>
 
 </header>
-<div class="skewed">
+<div class="slant">
 
 </div>
 
-
-    <div class="page-content">
-
-    <div class="banner">
-      
-
-    </div>
-
-
-      <div class="wrapper">
-       
-
-    
-
-
-
-
-
-
-
-     
-
-
-        <div class="post_section">
-             <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Antother awesome post!</h1>
-    <p class="post-meta">Oct 6, 2014 • Mark Santiago</p>
-  </header>
-
-  <article class="post-content">
-    <h1 id="this-site-is-still-a-work-in-progress">This Site is Still a Work in Progress!</h1>
-
-  </article>
-
-</div>
-
-
-        </div>
-
-
-      </div>
-
-
-
-
-
-
-
-
-    </div>
-
-    <footer class="site-footer">
+<!-- <footer class="site-footer">
 
   <div class="wrapper">
 
@@ -249,6 +108,32 @@
   </div>
 
 </footer>
+ -->
+<!-- </div> -->
+
+
+
+<!-- <div class="page-content right_side"> -->
+
+  <div class="post_section">
+       <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Antother awesome post!</h1>
+    <p class="post-meta">Oct 6, 2014 • Mark Santiago</p>
+  </header>
+
+  <article class="post-content">
+    <h1 id="this-site-is-still-a-work-in-progress">This Site is Still a Work in Progress!</h1>
+
+  </article>
+
+</div>
+
+  </div>
+
+<!-- </div> -->
+
 
 
   </body>

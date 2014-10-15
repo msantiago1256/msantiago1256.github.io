@@ -75,6 +75,6 @@ gulp.task("deploy", ["jekyll-build"], function () {
     return gulp.src("./_site/**/*")
         .pipe(deploy({
           branch:"master",
-          message:"trying Gulp-GH-Pages and shakyshane tools"
+          message:"Re-Launch"
         }));
 });
