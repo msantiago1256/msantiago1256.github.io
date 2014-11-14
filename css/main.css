@@ -648,22 +648,27 @@ input:checked + .holder > .resume.Intro, input:checked + .holder > .resume.Skill
     box-shadow: inset -1px 2px 7px -1px #B8B8B8;
     left: 50%;
     margin-left: -50px;
-    -webkit-transition: all 400ms linear;
-            transition: all 400ms linear; }
+    -webkit-transition: all 250ms linear;
+            transition: all 250ms linear; }
     .postHeader nav a h2 {
       color: #372650;
       font-family: 'Amatic SC', cursive;
       font-size: 50px;
       text-align: center;
       font-weight: 800;
-      line-height: 45px; }
+      line-height: 45px;
+      -webkit-transition: all 200ms linear;
+              transition: all 200ms linear; }
   .postHeader nav a:hover {
-    background: #7f5db2;
     text-decoration: none;
     box-shadow: inset -1px 2px 13px 3px #B8B8B8;
     -webkit-transform: scale(0.95);
         -ms-transform: scale(0.95);
             transform: scale(0.95); }
+    .postHeader nav a:hover h2 {
+      -webkit-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+              transform: scale(0.95); }
 
 .post_body {
   width: 80%;
@@ -683,7 +688,6 @@ input:checked + .holder > .resume.Intro, input:checked + .holder > .resume.Skill
 .post_body + footer {
   width: 100%;
   padding: 15px 0px 0px;
-  position: absolute;
   bottom: 0;
   color: whitesmoke;
   background: #344D6C; }
